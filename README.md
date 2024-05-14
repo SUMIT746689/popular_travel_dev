@@ -36,7 +36,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
  - Break down a page in a small components
  - Make Reusable Components like, ButtonWrapper, InputWrapper etc
- - Using Lifting States up methods for manage states of React JS
  - Good Folder Structure
 
 ## Live Projects
