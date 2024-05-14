@@ -43,4 +43,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
  - https://admin.edu360.com.bd/
  - http://68.183.93.52:3001/
 
-## Learn More
+## Personal Projects
+ - https://github.com/SUMIT746689/frontend_figma_to_Nextjs
+ 
