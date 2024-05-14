@@ -3,10 +3,9 @@ import { ContainerWrapper } from "@/components/ContainerWrapper";
 import { DateInputWrapper, InputWrapper } from "@/components/InputWrapper";
 import React, { useState } from "react";
 import { SearchButtonWrapper } from "@/components/ButtonWrapper";
-import { FlightListTable } from "./flightListsTable";
+import { FlightListTable } from "./FlightListsTable";
 import { FlightDatasTypes } from "@/types/homePageTypes";
 import { SelectFieldWrapper } from "@/components/SelectFieldWrapper";
-// import Navbar from "@/layouts/Navbar";
 
 export default function Home() {
   const [values, setValues] = useState<any>({});
@@ -20,9 +19,6 @@ export default function Home() {
         console.log({ myJson });
       });
   }
-  // useEffect(() => {
-  //   getData()
-  // }, [])
 
   const handleChange = (event: React.FormEvent<HTMLInputElement>) => {
     // @ts-ignore
@@ -34,10 +30,9 @@ export default function Home() {
   const handleClick = () => {
     getData()
   }
-  console.log({ selectTripType })
+
   return (
     <>
-      {/* <Navbar /> */}
       <div className=" border-b">
         <ContainerWrapper>
           <h6 className=" text-2xl font-semibold">Master Price</h6>
@@ -51,7 +46,7 @@ export default function Home() {
           <button className={`${selectTripType === 'multi_city' && 'bg-indigo-900 text-white'} px-4 py-[3px] border cursor-pointer border-indigo-900`} onClick={() => setSelectTripType('multi_city')}>Multi City</button>
         </div>
 
-        <div className=" py-2 grid border-b border-sky-500 gap-x-2" style={{display:"grid",gridTemplateColumns:"12.5% 12.5% 12.5% 7.5% 7.5% 12.5% 5% 10% 10% 5%"}}>
+        <div className=" py-2 grid border-b border-sky-500 gap-x-2" style={{ display: "grid", gridTemplateColumns: "12.5% 12.5% 12.5% 7.5% 7.5% 12.5% 5% 10% 10% 5%" }}>
           <InputWrapper name={'lhr'} value={values.lhr} placeholder="LHR" handleChange={handleChange} />
           <InputWrapper name={'cdg'} value={values.cdg} placeholder="CDG" handleChange={handleChange} />
           <DateInputWrapper />
@@ -62,9 +57,9 @@ export default function Home() {
           <SelectFieldWrapper placeholder="ADT" />
           <SelectFieldWrapper placeholder="1" />
           <h1 className=" text-xl m-auto">+</h1>
-          
         </div>
 
+{/*  */}
         <div className=" text-md font-medium text-black flex justify-between py-2 text-center border-b border-sky-500">
           <div className="flex gap-2 justify-center my-auto">
             <input type="checkbox" className=" my-auto rounded-none" />Extra Options
@@ -79,6 +74,7 @@ export default function Home() {
           </div>
         </div>
 
+        {/*flight datas list table  */}
         <FlightListTable flightDatas={flightDatas} />
       </ContainerWrapper>
     </>

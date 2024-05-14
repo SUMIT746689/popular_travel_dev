@@ -22,7 +22,7 @@ export const DateInputWrapper = () => {
                 <div className="absolute inset-y-0 end-0 flex items-center pe-3 pointer-events-none">
                     <FaRegCalendarMinus className=" text-xl font-medium" />
                 </div>
-                <input datepicker-autohide type="text" className="bg-gray-50 border rounded-none border-gray-700 text-gray-900 text-sm block w-full pe-10 p-2.5 " placeholder="Select date" />
+                <input type="text" className="bg-gray-50 border rounded-none border-gray-700 text-gray-900 text-sm block w-full pe-10 p-2.5 " placeholder="Select date" />
             </div>
         </>
     )
