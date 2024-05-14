@@ -1,17 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project with bootstrap CSS.
+This is a [Next.js](https://nextjs.org/) project with TypeScript and Bootstrap CSS.
 
 
 ## Getting Project Start Procedure
 
-First, clone this project your local machine  
+ Install nodeJs and npm in your local machine before getting start.
 
-Second, run command ```bash npm  install ``` for install all dependencies
+ 1. Clone this project in your local machine:
 
-Last, run the development server:
+    ```bash 
+    git clone https://github.com/SUMIT746689/popular_travel_dev/
 
-```bash
-npm run dev
-```
+    cd popular_travel_dev  
+  
+    ```  
+
+ 3. Run command for install all dependencies:
+
+    ```bash 
+    npm install 
+    ``` 
+
+ 4. Last, run the development server:
+
+    ```bash
+    npm run dev
+    ```
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Project Complete Time 
